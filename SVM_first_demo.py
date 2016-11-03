@@ -68,6 +68,9 @@ y_combined = np.hstack((y_train, y_test))
 plot_decision_region(X=X_combined_std,
                      y=y_combined, classifier=svm, 
                      test_idx=range(105,150))
+plt.xlabel('petal length [standardized]')
+plt.ylabel('petal width [standardized]')
+plt.legend(loc='upper left')
 plt.show
 
 #######MAYBE TRY LATER
